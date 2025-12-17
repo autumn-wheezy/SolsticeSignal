@@ -1,0 +1,46 @@
+{
+  "name": "solstice-signal",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "SolsticeSignal – small onchain-ready web app (Vite + React + TypeScript).",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -p tsconfig.json && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@coinbase/onchainkit": "^1.1.2",
+    "@coinbase/wallet-sdk": "^4.3.7",
+    "@coinbase/x402": "^0.7.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "viem": "^2.21.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.40",
+    "@types/react-dom": "^18.2.15",
+    "@vitejs/plugin-react": "^4.2.0",
+    "typescript": "^5.3.3",
+    "vite": "^5.0.8"
+  },
+  "dependencyDescriptions": {
+    "@coinbase/onchainkit": {
+      "repo": "coinbase/onchainkit",
+      "why": "UI-компоненты и утилиты для ончейн-приложений (кошелёк, транзакции, NFT компоненты и т.д.)."
+    },
+    "@coinbase/wallet-sdk": {
+      "repo": "coinbase/wallet-sdk (Coinbase Wallet SDK)",
+      "why": "Подключение/интеграция Coinbase Wallet (провайдер и взаимодействие с кошельком)."
+    },
+    "@coinbase/x402": {
+      "repo": "coinbase/x402",
+      "why": "x402 payments protocol: HTTP-native платежи/монетизация API (полезно для payable endpoints)."
+    },
+    "viem": {
+      "repo": "wevm/viem",
+      "why": "RPC-чтение/транзакции в EVM-сетях (удобно рядом с OnchainKit)."
+    }
+  }
+}
